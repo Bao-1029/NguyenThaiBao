@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo form và các điều khiển trên form</title>
+    <style>
+        table,td{
+            border : 2px solid purple;
+            background-color: #39a4ce;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        h1{
+            color: #f57215;
+        }
+    </style>
+</head>
+<body>
+        <form>
+        <table>
+            <caption><h1>Đăng nhập</h1></caption>
+            <br>
+            <tr>
+                <td>Mã người dùng:</td>
+                <td><input type="text" name="Thaibao59TH2"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td><input type="password" name="thaibao"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <button type="button" onclick="show.innerText=Thaibao59TH2.value">Đồng ý</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <div id="show"></div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

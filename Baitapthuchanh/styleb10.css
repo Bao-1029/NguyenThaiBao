@@ -1,0 +1,39 @@
+body{
+    border: 2px solid purple;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+.left-h{
+    width: 90%;
+}
+.left-h>h2{
+    background-color: red;
+    color: white;
+    text-align: right;
+    margin: 0px auto 20px auto;
+    border: 1px solid purple;
+}
+.left-h>h1{
+    background-color: pink ;
+    color: red;
+    text-align: center;
+    padding: 20px 0px; /* tạo khoảng không cho thành phân*/
+    margin: auto 0; /*căn lề top right bottom left*/ 
+    border: 1px solid purple;
+}
+.right-h{
+    border: 1px solid purple;
+}
+b{
+    color: #ec18c9;
+    font-size: 20px;
+}
+table, td{
+    border: 1px solid purple;
+    border-collapse: collapse;
+    align-content: right;
+
+
+}

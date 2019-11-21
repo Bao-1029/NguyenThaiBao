@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tạo form và các điều khiển</title>
+    <style>
+        h1{
+            text-align: center;
+            color:cornflowerblue;
+        }
+        #kq{
+            text-align: center;
+            color:red;
+        }
+        table, td {
+            border-collapse: collapse;
+            border: 1px solid #e7602b;
+            color: blue;
+            background-color: #bccf4c;
+        }
+        table {
+            width: 40%;
+            margin: 0 auto;
+        }
+        input[type="text"] {
+            padding-right: 60px;
+            padding: 5px 0 ;
+        }
+        input[type="checkbox"]{
+            margin-right: 3px;
+        }
+        input[type="button"]{
+            background-color: #ad629b;
+            display: block;
+            margin: 0 auto;
+        }
+        legend{
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+        <h1>Đăng ký du lịch</h1>
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" name="" ></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text" name="" ></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td> 
+                <td><input type="text" name="""></td>
+            </tr>
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td><input type="checkbox" name=""></td>
+            </tr>
+            <tr>
+                <td>Chọn tour</td>
+                <td><select>
+                        <optgroup label="Miền Bắc">
+                            <option value="" >Hà Nội-Hạ Long-Sapa</option>
+                            <option value="" >Hà Nội-Chùa Hương-Ninh Bình</option>
+                            <option value="" >Hà Nội-Cát Bà- Tuấn Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option value="" >Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="" >Nha Trang - Đà Lạt</option>
+                            <option value="" >Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                            <option value="" >TP.HCM - Cần Thơ - Cà Mau</option>
+                            <option value="" >TP.HCM - Mỹ Tho</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương tiện</td>
+                <td>
+                        <input type="checkbox" name="" id="" >Máy bay
+                        <input type="checkbox" name="" id="">Xe ô tô
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" width="350px" height="55px">
+                        <fieldset>
+                                <legend>Số lượng đoàn khách</legend>
+                                    Người lớn <input type="text" name="">
+                                    Trẻ em <input type="text" name="" >
+                        </fieldset>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" id="" value="Đồng ý" onclick="getN()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="kq">
+                    
+                </td>
+                
+            </tr>
+        </table>
+        <script>
+                var getN = function() {
+                    var thongbao = "Bạn đã đăng ký thành công!";
+                    document.getElementById('kq').textContent = thongbao;
+                }
+        </script>
+    
+</body>
+</html>
