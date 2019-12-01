@@ -1,0 +1,299 @@
+*{
+  margin: 0 auto;
+}
+/*=================================*/
+@font-face{
+    font-family: "ProximaNovaR";
+    font-weight: 400;
+    font-style: normal;
+    src: url("../fonts/ProximaNova-Reg.otf") format("opentype");
+    font-display: auto;
+}
+@font-face{
+    font-family: "ProximaNovaL";
+    font-weight: 300;
+    font-style: normal;
+    src: url("../fonts/ProximaNova-Light.otf") format("opentype");
+    font-display: auto;
+}
+@font-face{
+    font-family: "Roboto";
+    font-style: normal;
+    src: url("../fonts/Roboto-Regular.ttf") format("opentype");
+    font-display: auto;
+}
+body{
+    font-size: 15px;
+    font-family: "Roboto";
+}
+
+header {
+    background-color: #f7c61d;
+    margin: 0 auto;
+    width: 100%;
+    height: 67px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    padding: 0 50px;
+}
+ul{ 
+    display: flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    margin: 20px 40px;
+}
+ul li a{
+    font-family: "ProximaNovaR" ;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+H1{
+    padding-top: 15px;
+}
+main{
+    height: 1450px;
+}
+.main-left{
+    width: 70%;
+    float: left;
+}
+.main-right{
+    width:30%;
+    float: left;
+    
+}
+article {
+    margin-bottom: 60px;
+    display: flex;
+}
+.wapper {
+    margin: 30px 100px;
+}
+.artcle-right{
+    padding-left: 30px;
+}
+.title{
+    margin: 20px 0px;
+}
+.meta{
+    margin: 20px auto;
+}
+.description::after{ 
+    content: ">";
+    color: #e3b002;
+}
+.description::after:hover{
+    cursor: pointer;
+}
+.artcle-right h3{
+    font-family: "ProximaNovaL";
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.meta {
+    font-family: "Roboto" ;
+    font-weight: 300;
+    color: #999;
+    font-size: 13px;
+}
+.meta span:not(:last-child)::after, .view::after 
+{
+    display: inline-block;
+    content: '|';
+    font-size: 12px;
+    color: #999;
+    margin: 0 10px;
+}
+.view , .comment{
+    margin-left: 5px;
+}
+.category , .comment {
+    color: #e3b802;
+}
+
+.more{
+    border:1px solid #e3b802;
+    width: 200px;
+    height: 50px;
+    display: block;
+    font-family: "Roboto";
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+}
+.add{
+    margin-top: 10px;
+    font-family: "Roboto";
+    font-size: 12px;
+    color: #999;
+}
+
+.search-box{
+    padding-top: 70px;
+    padding-left: 60px;
+    display: flex;
+    position: relative;
+}
+.search-box label{
+    position: relative;
+    left:24px;
+    top : 11px;
+    z-index: 100;
+}
+.search-box input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px 10px 8px 30px;
+    outline: none;
+    border: 1px solid #e5e5e5;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+table{
+    border-spacing: 0;
+}
+.calender-widget {
+   
+    border: 1px solid #e5e5e5;
+    width:270px;
+    border-radius: 10px ;
+    position: relative;
+    left:38px;
+    top : 50px;
+    z-index: 100;   
+}
+.calender-widget .calender-top{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px 10px  0px 0px;
+}
+.calender-prev, .calender-next{
+    color: #e5e5e5;
+}
+.calender-widget table{
+    width:100%;
+    border-radius: 0 0 10px 10px;
+}
+.calender-widget table th {
+    height: 34px;
+    background: #e7e7e7;
+    color: #888;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid white;
+}
+.calender-widget table td{
+    height: 35px;
+    text-align: center;
+    border: 1px solid #e7e7e7;
+    color: #e5e5e5;
+}
+.calender-widget tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+.calender-widget tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+.calender-widget .cr-c{
+    color: #4d4d4d;
+}
+.calender-widget .d{
+    background-color: #f7c82f;
+    color: white;
+}
+.description{
+    line-height: 1.5;
+}
+.populer-news {
+    padding: 120px 0px 0px 80px;
+}
+.date{
+    margin-left: 0px;
+    font-size: 13px;
+    color: #b1adad;
+}
+.populer-news h3{
+    font-size: 16px;
+    font-family: "Roboto";
+    line-height: 1.2;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.populer-news h2{
+    font-family: "ProximaNovaR";
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+}
+.populer-news h2::after{
+    content: ".";
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #e5e5e5;
+    margin-left: 10px;
+   
+}
+.populer-news article{
+    flex-direction: column;
+    margin: 40px 0px;;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0;
+}
+.page-footer {
+    width: 100%;
+    background-color: #f7c61d;
+    margin-top: 200px;
+    height: 67px;
+}
+.copy{
+    padding-top: 25px;
+    font-family: "ProximaNovaR";
+    font-size: 13px;
+    color: #b1adad
+}
+.wrapper{
+    display: flex;
+    margin: 0px auto;
+    padding: 0 50px;
+}
+.socials a {
+    float: left;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border-radius: 50%;
+    color: #f7c61d;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.footer-nav ul li a{
+    font-family: "Roboto" ;
+    font-weight: 300;
+    font-size: 13px;
+}
